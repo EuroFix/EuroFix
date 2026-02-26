@@ -6,7 +6,6 @@
 <title>EuroFix Cleaning & Refurbish</title>
 
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="style.css">
 
 <!-- Google Translate -->
 <script type="text/javascript">
@@ -16,7 +15,130 @@ function googleTranslateElementInit() {
 </script>
 <script src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
 
+<style>
+
+:root{
+    --blue:#0B3C5D;
+    --yellow:#FFD700;
+}
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins', sans-serif;
+    scroll-behavior:smooth;
+}
+
+body{
+    background:white;
+    color:black;
+}
+
+header{
+    background:var(--blue);
+    color:white;
+    padding:15px 8%;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    position:sticky;
+    top:0;
+}
+
+.logo{
+    font-size:22px;
+    font-weight:700;
+    color:var(--yellow);
+}
+
+nav ul{
+    list-style:none;
+    display:flex;
+    gap:25px;
+}
+
+nav a{
+    text-decoration:none;
+    color:white;
+    transition:0.3s;
+}
+
+nav a:hover{
+    color:var(--yellow);
+}
+
+section{
+    padding:80px 8%;
+}
+
+.section-yellow{
+    background:var(--yellow);
+}
+
+.section-blue{
+    background:var(--blue);
+    color:white;
+}
+
+.grid{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:40px;
+    align-items:center;
+}
+
+.grid img{
+    width:100%;
+    border-radius:12px;
+}
+
+.button{
+    background:var(--blue);
+    color:white;
+    padding:12px 20px;
+    border-radius:6px;
+    text-decoration:none;
+    display:inline-block;
+    margin-top:20px;
+}
+
+footer{
+    background:black;
+    color:white;
+    padding:60px 8%;
+}
+
+.footer-grid{
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+    gap:30px;
+}
+
+footer h4{
+    color:var(--yellow);
+    margin-bottom:15px;
+}
+
+footer a{
+    color:white;
+    text-decoration:none;
+    display:block;
+    margin-bottom:8px;
+}
+
+footer a:hover{
+    color:var(--yellow);
+}
+
+@media(max-width:900px){
+    .grid{grid-template-columns:1fr;}
+    .footer-grid{grid-template-columns:1fr 1fr;}
+}
+
+</style>
 </head>
+
 <body>
 
 <header>
@@ -24,8 +146,8 @@ function googleTranslateElementInit() {
 <nav>
 <ul>
 <li><a href="index.html">Home</a></li>
-<li><a href="deep-cleaning.html">Services</a></li>
-<li><a href="refurbishment.html">Refurbishment</a></li>
+<li><a href="deep-cleaning.html">Cleaning</a></li>
+<li><a href="renovation.html">Renovation</a></li>
 <li><a href="maintenance.html">Maintenance</a></li>
 </ul>
 </nav>
@@ -36,9 +158,9 @@ function googleTranslateElementInit() {
 <section class="section-yellow">
 <h1>Professional Cleaning & Refurbishment Solutions</h1>
 <p>EuroFix Cleaning & Refurbish is an international property services company delivering high-quality cleaning, maintenance, and refurbishment solutions across residential and commercial environments.</p>
-<p>Led by certified professionals with electrical installation qualifications (Level 2 & 3, 18th Edition City & Guilds) and extensive experience in hospitality and construction environments.</p>
+<p>Our mission is to provide reliable, safe and high-standard services that increase property value and ensure hygiene excellence.</p>
 
-<a href="deep-cleaning.html" class="button">Explore Our Services</a>
+<a href="deep-cleaning.html" class="button">Explore Services</a>
 
 <div class="grid" style="margin-top:50px;">
 <img src="https://images.unsplash.com/photo-1581578731548-c64695cc6952">
@@ -55,7 +177,7 @@ function googleTranslateElementInit() {
 <a href="index.html">Home</a>
 <a href="deep-cleaning.html">Deep Cleaning</a>
 <a href="maintenance.html">Maintenance</a>
-<a href="refurbishment.html">Refurbishment</a>
+<a href="renovation.html">Renovation</a>
 </div>
 
 <div>
@@ -68,7 +190,7 @@ function googleTranslateElementInit() {
 <h4>Services</h4>
 <a href="deep-cleaning.html">Deep Cleaning</a>
 <a href="maintenance.html">Property Maintenance</a>
-<a href="refurbishment.html">Renovation Services</a>
+<a href="renovation.html">Full Renovation</a>
 </div>
 
 <div>
